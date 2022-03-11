@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+
+#imagen-ahorcado {
+  height: 600px;
+}
+
+.respuesta {
+  letter-spacing: 10px;
+}
+
+.info,
+.mas-info,
+.input,
+.respuesta,
+.reset {
+  margin-top: 25px;
+}

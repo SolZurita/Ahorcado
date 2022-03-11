@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h3 id="info" class="info">Te quedan 1 intento</h3>
+    <h1 id="mas-info" class="mas-info"></h1>
+    <div>
+      <input
+        id="input"
+        class="input"
+        type="text"
+        placeholder="ingrese una letra"
+        maxlength="1"
+      /><button onclick="enviar()" id="enviar" class="enviar">Enviar</button>
+    </div>
+    <h2 id="respuesta" class="respuesta"></h2>
+    <div id="reset-button" class="reset">
+      <button onclick="reset()">Comenzar de nuevo</button>
+    </div>
+    <div id="canvas" class="canvas">
+      <img id="imagen-ahorcado" />
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
