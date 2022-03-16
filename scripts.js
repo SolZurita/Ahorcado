@@ -1,4 +1,4 @@
-const palabras = ["sqa"];
+const palabras = ["amor", "paz", "bondad", "cielo", "tierra", "fuego", "aire","agua","miel","lino","sol"];
 
 let palabra = "";
 
@@ -20,6 +20,7 @@ const imagenAhorcado = document.getElementById("imagen-ahorcado");
 
 const canvas = document.getElementById("canvas");
 
+
 function desactivarEnvio(estado) {
   botonEnviar.disabled = estado;
   inputTexto.disabled = estado;
@@ -36,7 +37,7 @@ function reset() {
 }
 
 function mostrarInfo() {
-  infoMensaje.innerHTML = "Te quedan " + intentos + " intentos";
+  infoMensaje.innerHTML = "Te quedan " + intentos + " intentos"; 
 }
 
 function incluirLetra(letra) {
@@ -60,6 +61,7 @@ function enviar() {
   const letra = inputTexto.value;
   masInfo.innerHTML = "";
   inputTexto.value = "";
+  console.log
   incluirLetra(letra);
   if (palabra.includes(letra) === false) {
     intentos--;
@@ -117,8 +119,8 @@ function agregarDibujo() {
 }
 
 function inicio() {
-  palabra = palabras[Math.floor(Math.random() * palabras.length)];
-  intentos = palabra.length;
+  palabra = palabras[Math.floor(Math.random() * palabras.length)]; //elegimos una palabra al azar del array palabras
+  intentos = palabra.length; //la cantidad de letras d ela palabra es igual a la cantidad de intentos
   mostrarInfo();
   mostrarPalabra();
 }

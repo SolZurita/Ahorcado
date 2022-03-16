@@ -1,9 +1,18 @@
 body {
-  text-align: center;
+  background: #cccccc;
+  text-align:center;
+}
+h2{
+  padding-top: 0.5%;
 }
 
+.banner{
+  width: 100%;
+  height: auto;
+}
 #imagen-ahorcado {
-  height: 600px;
+  height: 300px;
+  padding-top: 20px;
 }
 
 .respuesta {
@@ -14,6 +23,9 @@ body {
 .mas-info,
 .input,
 .respuesta,
-.reset {
+.reset,
+h3 {
+  color: purple;
   margin-top: 25px;
+  
 }
